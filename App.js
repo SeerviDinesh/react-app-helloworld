@@ -7,6 +7,7 @@
  */
 
 import React, {Component} from 'react';
+import { Button } from 'react-native';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 const instructions = Platform.select({
@@ -15,35 +16,34 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
-type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={[styles.col, styles.example]}>Hay Dinesh Seervi This is Your Very First Native App.</Text>
       </View>
     );
   }
 }
-
+<Button
+  onPress={() => {
+    Alert.alert('You tapped the button!');
+  }}
+  title="Press Me"
+/>
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#A5ACFF',
   },
-  welcome: {
-    fontSize: 20,
+  example: {
+    fontSize: 40,
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  col: {
+    color: '#afa',
+  }
 });

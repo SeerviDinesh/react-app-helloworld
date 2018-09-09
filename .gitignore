@@ -22,6 +22,7 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+
 # Android/IntelliJ
 #
 build/
@@ -40,6 +41,12 @@ yarn-error.log
 buck-out/
 \.buckd/
 *.keystore
+\.buckconfig
+\.flowconfig
+\.gitattributes
+\.watchmanconfig
+\package-lock.json
+
 
 # fastlane
 #
@@ -54,3 +61,7 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
+
+
+# Added by me 
+\.bash_profile
